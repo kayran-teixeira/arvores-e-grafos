@@ -1,1 +1,1 @@
-# arvores-e-grafos
+Repositorio dedicado a postagem das atividades de árvores e grafos
