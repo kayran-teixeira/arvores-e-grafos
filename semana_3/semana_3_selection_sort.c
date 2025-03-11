@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
 #define TAMANHO 100
 
 int vetor1[TAMANHO];
@@ -38,7 +37,7 @@ int main(){
 	
 	preencherVetorAleatorio(vetor1, TAMANHO, 1, 5000);
 	
-	printf("Vetor 1 preenchido com números aleatórios:\n");
+	printf("Vetor 1 preenchido com nï¿½meros aleatï¿½rios:\n");
     for (int i = 0; i < TAMANHO; i++) {
         printf("%d ", vetor1[i]);
     }
@@ -52,8 +51,8 @@ int main(){
     }
     
     printf("\n\n");
-    printf("Número de comparações: %d\n", comparacoes1);
-    printf("Número de movimentações: %d\n", movimentacoes1);
+    printf("Nï¿½mero de comparaï¿½ï¿½es: %d\n", comparacoes1);
+    printf("Nï¿½mero de movimentaï¿½ï¿½es: %d\n", movimentacoes1);
     
     return 0;
 }
