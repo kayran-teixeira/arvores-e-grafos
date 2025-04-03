@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #define TAMANHO 100
 
 int vetor2[TAMANHO];
@@ -30,12 +29,9 @@ void bubbleSort(int arr[], int n) {
 
 
 int main(){
-	
-	setlocale(LC_ALL, "portuguese");
-	
 	preencherVetorAleatorio(vetor2, TAMANHO, 1, 5000);
 	
-	printf("Vetor 2 preenchido com n�meros aleat�rios:\n");
+	printf("Vetor 2 preenchido com números aleatorios:\n");
     for (int i = 0; i < TAMANHO; i++) {
         printf("%d ", vetor2[i]);
     }
@@ -49,8 +45,8 @@ int main(){
     }
     
     printf("\n\n");
-    printf("N�mero de compara��es: %d\n", comparacoes2);
-    printf("N�mero de movimenta��es: %d\n", movimentacoes2);
+    printf("Número de comparações: %d\n", comparacoes2);
+    printf("Número de movimentações: %d\n", movimentacoes2);
     
     return 0;
 }

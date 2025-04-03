@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #define TAMANHO 100
 
 int vetor1[TAMANHO];
@@ -32,12 +31,9 @@ void selectionSort(int arr[], int n) {
 
 
 int main(){
-	
-	setlocale(LC_ALL, "portuguese");
-	
 	preencherVetorAleatorio(vetor1, TAMANHO, 1, 5000);
 	
-	printf("Vetor 1 preenchido com n�meros aleat�rios:\n");
+	printf("Vetor 1 preenchido com números aleatorios:\n");
     for (int i = 0; i < TAMANHO; i++) {
         printf("%d ", vetor1[i]);
     }
@@ -51,8 +47,8 @@ int main(){
     }
     
     printf("\n\n");
-    printf("N�mero de compara��es: %d\n", comparacoes1);
-    printf("N�mero de movimenta��es: %d\n", movimentacoes1);
+    printf("Número de comparações: %d\n", comparacoes1);
+    printf("Número de movimentações: %d\n", movimentacoes1);
     
     return 0;
 }

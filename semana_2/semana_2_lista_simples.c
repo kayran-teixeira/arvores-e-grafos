@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 #define MAX_SIZE 10
 
 int lista[MAX_SIZE];
@@ -8,12 +7,12 @@ int tamanho = 0;
 
 int menu() {
 	int resposta;
-	printf("Digite 1 para adicionar números da lista\n");
-	printf("Digite 2 para remover números da lista\n");
-	printf("Digite 3 para buscar números na lista pelo índice\n");
+	printf("Digite 1 para adicionar nÃºmeros da lista\n");
+	printf("Digite 2 para remover nÃºmeros da lista\n");
+	printf("Digite 3 para buscar nÃºmeros na lista pelo ï¿½ndice\n");
 	printf("Digite 4 para imprimir a lista\n");
 	printf("Digite 0 para fechar o programa\n");
-	printf("Digite a opção desejada, lembrando que o tamanho máximo da lista são de 10 elementos: ");
+	printf("Digite a opÃ§Ã£o desejada, lembrando que o tamanho mÃ¡ximo da lista sÃ£o de 10 elementos: ");
 	scanf("%d", &resposta);
 	printf("\n");
 	return resposta;
@@ -22,37 +21,37 @@ int menu() {
 
 void adicionar() {
 	int numero;
-	printf("Digite o número que deseja adicionar no índice %d: ", tamanho);
+	printf("Digite o nÃºmero que deseja adicionar no Ã­ndice %d: ", tamanho);
 	scanf("%d", &numero);
 	lista[tamanho++] = numero;
-	printf("O número %d foi adicionado!\n\n", numero);
+	printf("O nÃºmero %d foi adicionado!\n\n", numero);
 }
 
 
 void remover() {
 	int numero, elemento_lista;
-	printf("Digite o índice do número que deseja remover: ");
+	printf("Digite o Ã­ndice do nÃºmero que deseja remover: ");
 	scanf("%d", &numero);
 	
 	if (numero >= 0 && numero < tamanho) {
 		elemento_lista = lista[numero];
 		lista[numero] = 0;
-		printf("O elemento %d foi removido do índice %d e substituido por 0!\n\n", elemento_lista, numero);
+		printf("O elemento %d foi removido do Ã­ndice %d e substituido por 0!\n\n", elemento_lista, numero);
 	} else {
-		printf("Índice inexistente, tente remover outro índice.\n\n");
+		printf("Ãndice inexistente, tente remover outro Ã­ndice.\n\n");
 	}
 }
 
 
 void buscar() {
 	int numero;
-	printf("Digite o índice do número que deseja buscar: ");
+	printf("Digite o Ã­ndice do nÃºmero que deseja buscar: ");
 	scanf("%d", &numero);
 	
 	if (numero >= 0 && numero < tamanho) {
-		printf("O número no índice %d é: %d\n\n", numero, lista[numero]);
+		printf("O nÃºmero no Ã­ndice %d Ã©: %d\n\n", numero, lista[numero]);
 	} else {
-		printf("Índice inexistente, tente buscar por outro índice.\n\n");
+		printf("Ãndice inexistente, tente buscar por outro Ã­ndice.\n\n");
 	}
 }
 
@@ -74,7 +73,6 @@ void imprimir_lista(int vetor[], int tamanho_lista) {
 
 	                  
 int main() {
-	setlocale(LC_ALL, "Portuguese");
 	int loop = 1;
 	
 	while(loop == 1) {
@@ -102,7 +100,7 @@ int main() {
 				break;
 			
 			default:
-				printf("\nOpção inexistente, tente inserir outro número\n\n");
+				printf("\nOpÃ§Ã£o inexistente, tente inserir outro nÃºmero\n\n");
 				break;
 		}
 	}

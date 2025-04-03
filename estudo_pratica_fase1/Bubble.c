@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 #include <time.h>
 #define TAMANHO 10000
 
@@ -25,7 +24,6 @@ void BubbleSort(int vetor[], int n) {
 
 
 int main() {
-    setlocale(LC_ALL, "portuguese");
     int i;
     srand(time(0));
 
